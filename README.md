@@ -1,2 +1,5 @@
-# bililive_dm-Janpese
-B站直播彈幕工具-日语版（Janpese）
+bililive_dm
+=======
+
+这是一个奇妙B站直播間彈幕工具. WTFPL授權.
+
