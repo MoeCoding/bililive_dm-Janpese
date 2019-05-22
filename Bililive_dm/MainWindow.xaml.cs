@@ -931,11 +931,11 @@ namespace Bililive_dm
             var n = ran.Next(100);
             if (n > 40)
             {
-                AddDMText("弾幕姬報告", "ねこちゃん可愛いAWSL", false);
+                AddDMText("弾幕姬報告", "QWQ", false);
             }
             else
             {
-                AddDMText("弾幕姬報告", "ねこちゃんつよつよAWSL", false);
+                AddDMText("弾幕姬報告", "AWSL", false);
             }
             SendSSP("弾幕姬テスト");
             foreach (var dmPlugin in App.Plugins.Where(dmPlugin => dmPlugin.Status))
