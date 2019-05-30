@@ -294,6 +294,17 @@ namespace BilibiliDM_PluginFramework
                                 }
                         }
 
+                        if (cmd.StartsWith("DANMU_MSG")) // "高考"fix
+                        {
+                            MsgType = MsgTypeEnum.Comment;
+                            CommentText = obj["info"][1].ToString();
+                            UserID = obj["info"][2][0].ToObject<int>();
+                            UserName = obj["info"][2][1].ToString();
+                            isAdmin = obj["info"][2][2].ToString() == "1";
+                            isVIP = obj["info"][2][3].ToString() == "1";
+                            UserGuardLevel = obj["info"][7].ToObject<int>();
+                            break;
+                        }
                         break;
                     }
 
@@ -303,6 +314,7 @@ namespace BilibiliDM_PluginFramework
 
 
         }
+
 
     }
 
